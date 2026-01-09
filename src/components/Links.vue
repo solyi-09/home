@@ -47,7 +47,7 @@ import { Link, CompactDisc, Cloud, Compass, Book, Fire, LaptopCode } from "@vico
 import { BrandGithub, ApiApp, Lock, WaveSine, DeviceAnalytics } from "@vicons/tabler";
 import { Blog } from "@vicons/carbon";
 import { WbCloudyOutlined, EventNoteOutlined } from "@vicons/material";
-import { HeartPulse24Regular, DrawShape20Regular } from "@vicons/fluent";
+import { HeartPulse24Regular, DrawShape20Regular, BrightnessHigh48Regular } from "@vicons/fluent";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper/modules";
@@ -83,6 +83,7 @@ const siteIcon = {
   EventNoteOutlined,
   DeviceAnalytics,
   DrawShape20Regular,
+  BrightnessHigh48Regular,
 };
 
 // 链接跳转
