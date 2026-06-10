@@ -2,7 +2,7 @@
   {
     "icon": "BrandGithub",
     "name": "GitHub",
-    "link": "https://github.com/solyi-09"
+    "link": ""
   },
   {
     "icon": "BrightnessHigh48Regular",
@@ -11,8 +11,8 @@
   },
   {
     "icon": "HeartPulse24Regular",
-    "name": "站点监测",
-    "link": "https://uptime.zller.cc"
+    "name": "站点地图",
+    "link": ""
   },
   {
     "icon": "Blog",
@@ -20,14 +20,14 @@
     "link": "https://blog.solyi.cn"
   },
   {
-    "icon": "WbCloudyOutlined",
-    "name": "云盘",
-    "link": "https://pan.quark.cn/s/71b50a61b4a4"
+    "icon": "Compass",
+    "name": "网址导航",
+    "link": "https://celebrate.solyi.cn/links"
   },
   {
     "icon": "Fire",
     "name": "今日热榜",
-    "link": "https://hot.linzeliang.com"
+    "link": ""
   },
   {
     "icon": "DeviceAnalytics",
@@ -38,5 +38,20 @@
     "icon": "DrawShape20Regular",
     "name": "Excalidraw",
     "link": "https://draw.zller.cc"
+  },
+  {
+    "icon": "Book",
+    "name": "校招-OC",
+    "link": "https://www.givemeoc.com/?aff=12931"
+  },
+  {
+    "icon": "DeviceAnalytics",
+    "name": "Rayin AI中转",
+    "link": "https://code.rayinai.com/home?aff=MOMO"
+  },
+  {
+    "icon": "DeviceAnalytics",
+    "name": "AI在线画图",
+    "link": "https://code.rayinai.com/extension/draw"
   }
 ]
