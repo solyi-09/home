@@ -143,3 +143,11 @@ export const siteDateStatistics = (startDate) => {
     return `本站已经苟活了 ${Math.round(differenceInDays)} 天`;
   }
 };
+
+// 喜欢莎头日期统计
+export const shatouDateStatistics = (startDate) => {
+  const currentDate = dayjs().startOf("day");
+  const start = dayjs(startDate).startOf("day");
+  if (!start.isValid() || currentDate.isBefore(start)) return null;
+  return `喜欢莎头已经 ${currentDate.diff(start, "day")} 天`;
+};

@@ -22,13 +22,17 @@
       <div v-if="store.siteStartShow" class="capsule-item start">
         <div class="item-title">{{ startDateText }}</div>
       </div>
+      <!-- 喜欢莎头日期 -->
+      <div v-if="shatouDateText && false" class="capsule-item start">
+        <div class="item-title">{{ shatouDateText }}</div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { HourglassFull } from "@icon-park/vue-next";
-import { getTimeCapsule, siteDateStatistics } from "@/utils/getTime.js";
+import { getTimeCapsule, shatouDateStatistics, siteDateStatistics } from "@/utils/getTime.js";
 import { mainStore } from "@/store";
 const store = mainStore();
 
@@ -36,13 +40,19 @@ const store = mainStore();
 const timeData = ref(getTimeCapsule());
 const startDate = ref(import.meta.env.VITE_SITE_START);
 const startDateText = ref(null);
+const shatouStartDate = ref(import.meta.env.VITE_SHATOU_START);
+const shatouDateText = ref(null);
 const timeInterval = ref(null);
 
+const updateTimeData = () => {
+  timeData.value = getTimeCapsule();
+  if (startDate.value) startDateText.value = siteDateStatistics(new Date(startDate.value));
+  if (shatouStartDate.value) shatouDateText.value = shatouDateStatistics(shatouStartDate.value);
+};
+
 onMounted(() => {
-  timeInterval.value = setInterval(() => {
-    timeData.value = getTimeCapsule();
-    if (startDate.value) startDateText.value = siteDateStatistics(new Date(startDate.value));
-  }, 1000);
+  updateTimeData();
+  timeInterval.value = setInterval(updateTimeData, 1000);
 });
 
 onBeforeUnmount(() => {
